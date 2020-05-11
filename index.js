@@ -28,7 +28,7 @@ client.on('message', async message => {
   // we ignore it
   if (!message.guild) return;
 
-  if (message.content === '#sm') {
+  if (message.content === '!sm') {
     // Only try to join the sender's voice channel if they are in one themselves
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
@@ -43,7 +43,7 @@ client.on('message', async message => {
   // we ignore it
   if (!message.guild) return;
 
-  if (message.content === '#le') {
+  if (message.content === '!le') {
     // Only try to join the sender's voice channel if they are in one themselves
     if (message.member.voice.channel) {
       const disconnection = await message.member.voice.channel.leave();
@@ -53,11 +53,6 @@ client.on('message', async message => {
   }
 });
 
-client.on('message', msg => {
-  if (msg.content === '#help') {
-    msg.reply('目前有的指令有:#sm召喚機器人進你所在的語音頻道 #le將機器人斷離你所在的語音頻道 #pl(空格)<URL> 播放歌曲到你所在的語音頻道(可先召喚機器人) #sk跳過目前歌曲');
-  }
-});
 
 
 
