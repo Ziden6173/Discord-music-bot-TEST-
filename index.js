@@ -28,7 +28,7 @@ client.on('message', async message => {
   // we ignore it
   if (!message.guild) return;
 
-  if (message.content === '!sm') {
+  if (message.content.startsWith(`${prefix}sm`)) {
     // Only try to join the sender's voice channel if they are in one themselves
     if (message.member.voice.channel) {
       const connection = await message.member.voice.channel.join();
@@ -43,7 +43,7 @@ client.on('message', async message => {
   // we ignore it
   if (!message.guild) return;
 
-  if (message.content === '!le') {
+  if (message.content.startsWith(`${prefix}le`)) {
     // Only try to join the sender's voice channel if they are in one themselves
     if (message.member.voice.channel) {
       const disconnection = await message.member.voice.channel.leave();
@@ -52,7 +52,6 @@ client.on('message', async message => {
     }
   }
 });
-
 
 
 
