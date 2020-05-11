@@ -18,25 +18,6 @@ client.once("disconnect", () => {
   console.log("Disconnect!");
 });
 
-client.on('ready', () => {
-    // Set bot status to: "Playing with JavaScript"
-    client.user.setActivity("麵包的懶覺", {type: "WATCHING"})
-
-    // Alternatively, you can set the activity to any of the following:
-    // PLAYING, STREAMING, LISTENING, WATCHING
-    // For example:
-    // client.user.setActivity("TV", {type: "WATCHING"})
-})
-
-
-
-
-
-
-
-
-
-
 
 
 
