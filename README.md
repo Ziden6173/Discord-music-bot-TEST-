@@ -16,9 +16,9 @@ discord自寫音樂機器人(測試中)
 記得等他跑好在關閉
 
 
-之後記得修改用nodepad++修改config.json 裡面的TOKEN改成自己機器人的TOKEN
+之後記得修改用 nodepad++ 修改 config.json 裡面的TOKEN改成自己機器人的TOKEN
 
-之後直接啟動start.bat檔案看到"機器人已準備就緒"就可以摟!
+之後直接啟動 start.bat 檔案看到"機器人已準備就緒"就可以摟!
 
 
 
