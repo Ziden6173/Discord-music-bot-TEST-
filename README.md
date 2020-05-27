@@ -9,6 +9,7 @@ discord自寫音樂機器人(測試中)
 
 
 然後輸入 
+
 npm install discord.js ffmpeg fluent-ffmpeg @discordjs/opus ytdl-core --save
 
 
